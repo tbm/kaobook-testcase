@@ -1,0 +1,36 @@
+
+\documentclass[
+	a4paper,
+	fontsize=10pt,
+	twoside=false,
+	numbers=noenddot,
+]{kaobook}
+
+% Choose the language
+\ifxetexorluatex
+	\usepackage{polyglossia}
+	\setmainlanguage{english}
+\else
+	\usepackage[english]{babel}
+\fi
+
+\begin{document}
+
+\mainmatter
+
+\setchapterimage[9.5cm]{images/spreadsheet}
+\chapter{Just a test}
+
+Note how the top of the image is cut off.
+
+\setchapterimage[10.5cm]{images/spreadsheet}
+\chapter{Just a test}
+
+Changing the paramter from 9.5cm to 10.5cm makes no difference
+
+
+\end{document}
+
+
+\end{document}
+
